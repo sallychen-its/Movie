@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3307:3306"
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 'kjfacqSKhPM7VYk8'
+      MYSQL_HOST: 127.0.0.1
+
+  movie-admin:
+    image: movie-admin:latest
+    restart: always
+    ports:
+      - 81:8071
+
+  movie-be:
+    image: movie-be:latest
+    restart: always
+    ports:
+      - 82:8080

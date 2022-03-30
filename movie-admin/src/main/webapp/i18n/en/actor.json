@@ -1,0 +1,32 @@
+{
+  "movieAdminApp": {
+    "actor": {
+      "home": {
+        "title": "Actors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Actor",
+        "createOrEditLabel": "Create or edit a Actor",
+        "notFound": "No Actors found"
+      },
+      "created": "A new Actor is created with identifier {{ param }}",
+      "updated": "A Actor is updated with identifier {{ param }}",
+      "deleted": "A Actor is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Actor {{ id }}?"
+      },
+      "detail": {
+        "title": "Actor"
+      },
+      "id": "ID",
+      "name": "Name",
+      "job": "Job",
+      "gender": "Gender",
+      "dateOfBirth": "Date Of Birth",
+      "homeTown": "Home Town",
+      "story": "Story",
+      "imageUrl": "Image Url",
+      "createdDate": "Created Date",
+      "movie": "Movie"
+    }
+  }
+}

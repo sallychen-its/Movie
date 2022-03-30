@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikachuFilmClub</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+
+            <nav class="header__navbar">
+              <ul class="header__navbar-list">
+                <a href="index.html" class="logo">
+                  <i class='bx bxl-firefox bx-tada color-red'></i><span class="main-color">Pikachu</span>FilmClub
+                </a>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-item-link">
+                    <i class='bx bx-search'></i>
+                    Tìm Kiếm</a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-item-link">Phim Hot</a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-item-link">Phim Lẻ</a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-item-link">Phim Bộ</a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-item-link">Tất Cả Phim</a>
+                </li>
+      
+              </ul>
+              <ul class="header__navbar-list">
+                <li>
+                  <a href="login.html" class="header__navbar-item header__navbar-item--bold ">
+                    <span>Đăng Nhập</span>
+                  </a>
+                </li>
+              </ul>
+              <!-- MOBILE MENU TOGGLE -->
+              <div class="hamburger-menu" id="hamburger-menu">
+                <div class="hamburger">
+                  <ul class="hamburger-menu-item" id="hamburger-menu-item">
+                    <li><a href="#">
+                        <i class='bx bx-search'></i>
+                        Tìm Kiếm</a>
+                    </li>
+                    <li><a href="#">Phim Hot</a></li>
+                    <li><a href="#">Phim Lẻ</a></li>
+                    <li><a href="#">Phim Bộ</a></li>
+                    <li><a href="#">Tất Cả Phim</a></li>
+                    <li>
+                      <a style="color: rgb(134, 19, 19);" href="login.html" class="header__navbar-item">
+                        <span>Đăng Nhập</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+        <!-- modal layout -->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- Authen form -->
+                <!-- Đăng nhập -->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <a href="register.html">
+                                <span class="auth-form__switch-btn">Đăng ký</span>
+                            </a>
+                            
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="#" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                    <span class="auth-form__help-separate"></span>
+                                    <a href="#" class="auth-form__help-link">Cần trợ giúp</a>
+                                </div>
+                            </div>
+                            <div class="auth-form__controls">
+                                <a href="index.html">
+                                    <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+                                </a>
+                                <!-- <button class="btn auth-form__controls-back">TRỞ LẠI</button> -->
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__socials">
+                            <a href="#" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class='auth-form__socials-icon bx bxl-facebook-circle'></i>
+                                <span class="auth-form__social-title">Kết nối với Facebook</span>
+                            </a>
+                            <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                <i class='auth-form__socials-icon bx bxl-google'></i>
+                                <span class="auth-form__social-title">Kết nối với Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Đăng ký -->
+                <!-- <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__aside">
+                                <p class="auth-form__policy-text">
+                                    Bằng việc đăng ký bạn có đồng ý với PikachuFilmClub về
+                                    <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                    <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                                </p>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn auth-form__controls-back">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG KÝ</button>
+                            </div>
+                        </div>
+
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class='auth-form__socials-icon bx bxl-facebook-circle'></i>
+                                <span class="auth-form__social-title">Kết nối với Facebook</span>
+                            </a>
+                            <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                <i class='auth-form__socials-icon bx bxl-google'></i>
+                                <span class="auth-form__social-title">Kết nối với Google</span>
+                            </a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="index.js"></script>
+</body>
+<style>
+    /* Authen Modal */
+/* Dang ky & dang nhap */
+.auth-form{
+    width: 500px;
+
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.auth-form__container{
+    padding: 0 32px;
+}
+.auth-form__header{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 500px;
+    color: var(--text-gray-color);
+}
+.auth-form__switch-btn{
+    font-size: 1.6rem;
+    font-weight: 500px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.auth-form__input{
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 12px;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    border: 1px solid var(--border-color);
+    outline: none;
+}
+.auth-form__input:focus{
+    border-color: #888;
+}
+.auth-form__aside{
+    margin-top: 20px;
+}
+.auth-form__policy-text{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+.auth-form__text-link{
+    color: var(--primary-color);
+    text-decoration: none;
+
+}
+
+.auth-form__controls{
+    margin-top: 40px;
+    display:flex;
+    justify-content: flex-end;
+}
+.auth-form__controls-back {
+    margin-right: 8px;
+}
+
+.auth-form__socials{
+    padding: 12px 36px;
+    display: flex;
+    justify-content: space-between;
+}
+.auth-form__socials-icon{
+    font-size: 1.8rem;
+}
+.auth-form__socials--facebook{
+    color: var(--white-color);
+    background-color: #3A5A98;
+}
+.auth-form__socials--facebook
+.auth-form__socials-icon{
+    color: var(--white-color);
+}
+.auth-form__social-title{
+    margin: 0 10px;
+}
+.auth-form__socials--google{
+    background-color: var(--border-color);
+}
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-form__help-link{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #888;
+}
+.auth-form__help-separate{
+    display: block;
+    margin: 2px 16px 0;
+    border-left: 1px solid var(--border-color);
+}
+.auth-form__help-forgot{
+    color: var(--primary-color);
+}
+</style>
+</html>

@@ -1,0 +1,123 @@
+{
+  "name": "Movie",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "200"
+    },
+    {
+      "fieldName": "nameInVietNamese",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "200"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "time",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "iMDB",
+      "fieldType": "Float"
+    },
+    {
+      "fieldName": "director",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "script",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "coutry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "premiere",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "posterUrl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "backgroundUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "movieUrl",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "updatedDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "trailer",
+      "otherEntityRelationshipName": "movie",
+      "relationshipName": "trailer",
+      "otherEntityField": "url"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "episode",
+      "otherEntityRelationshipName": "movie",
+      "relationshipName": "episode",
+      "otherEntityField": "name"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "category",
+      "otherEntityRelationshipName": "movie",
+      "relationshipName": "category",
+      "otherEntityField": "name",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "actor",
+      "otherEntityRelationshipName": "movie",
+      "relationshipName": "actor",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "session",
+      "otherEntityRelationshipName": "movie",
+      "relationshipName": "session",
+      "otherEntityField": "name"
+    }
+  ],
+  "entityTableName": "movie",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": true,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20211031030051"
+}

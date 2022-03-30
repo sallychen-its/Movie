@@ -1,0 +1,26 @@
+{
+  "movieAdminApp": {
+    "trailer": {
+      "home": {
+        "title": "Trailers",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Trailer",
+        "createOrEditLabel": "Create or edit a Trailer",
+        "notFound": "No Trailers found"
+      },
+      "created": "A new Trailer is created with identifier {{ param }}",
+      "updated": "A Trailer is updated with identifier {{ param }}",
+      "deleted": "A Trailer is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Trailer {{ id }}?"
+      },
+      "detail": {
+        "title": "Trailer"
+      },
+      "id": "ID",
+      "url": "Url",
+      "createdDate": "Created Date",
+      "movie": "Movie"
+    }
+  }
+}

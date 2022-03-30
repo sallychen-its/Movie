@@ -1,0 +1,74 @@
+entity Movie {
+	name String required maxlength(200)
+    nameInVietNamese String required  maxlength(200),
+    description String,
+    time Long,
+    iMDB Float,
+    director String,
+    script String,
+    coutry String,
+    premiere LocalDate required,
+    posterUrl String required,
+    backgroundUrl String,
+    movieUrl String required,
+    isActive Boolean required,
+    updatedDate LocalDate required,
+    createdDate LocalDate required
+}
+
+relationship OneToMany {
+	Movie{trailer(url)} to Trailer
+}
+
+relationship ManyToMany {
+	Movie{category(name)} to Category{movie}
+}
+
+relationship ManyToMany {
+	Movie{actor} to Actor{movie}
+}
+
+relationship OneToMany {
+	Movie{episode(name)} to Episode
+}
+
+entity Category {
+	name String required maxlength(200),
+  	description String,
+    isActive Boolean required,
+    createdDate LocalDate required
+}
+
+entity Trailer {
+	url String required,
+    createdDate LocalDate required
+}
+
+entity Actor {
+	name String required maxlength(200),
+    job String maxlength(100),
+    gender String maxlength(10),
+    dateOfBirth LocalDate,
+    homeTown String,
+    story String,
+    imageUrl String,
+    createdDate LocalDate required
+}
+
+entity Episode {
+	name String required,
+    createdDate LocalDate required
+}
+
+entity Session {
+	name String required,
+    description String required,
+    createdDate LocalDate required
+}
+
+relationship OneToMany {
+	Session to Movie{session(name)}
+}
+
+dto * with mapstruct
+service * with serviceClass

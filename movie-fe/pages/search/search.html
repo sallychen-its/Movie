@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikachuFilmClub</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <a href="index.html" class="logo">
+                        <i class='bx bxl-firefox bx-tada color-red'></i><span class="main-color">Pikachu</span>FilmClub
+                    </a>
+                    <li class="header__navbar-item">
+                        <a href="search.html" class="header__navbar-item-link">
+                            <i class='bx bx-search'></i>
+                            Tìm Kiếm</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">Phim Hot</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">Phim Lẻ</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">Phim Bộ</a>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="#" class="header__navbar-item-link">Tất Cả Phim</a>
+                    </li>
+
+                </ul>
+                <ul class="header__navbar-list">
+                    <li>
+                        <a href="login.html" class="header__navbar-item header__navbar-item--bold ">
+                            <span>Đăng Nhập</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger">
+                        <ul class="hamburger-menu-item" id="hamburger-menu-item">
+                            <li><a href="#">
+                                    <i class='bx bx-search'></i>
+                                    Tìm Kiếm</a>
+                            </li>
+                            <li><a href="#">Phim Hot</a></li>
+                            <li><a href="#">Phim Lẻ</a></li>
+                            <li><a href="#">Phim Bộ</a></li>
+                            <li><a href="#">Tất Cả Phim</a></li>
+                            <li>
+                                <a style="color: rgb(134, 19, 19);" href="login.html" class="header__navbar-item">
+                                    <span>Đăng Nhập</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- modal layout -->
+        <div class="modal">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <!-- Authen form -->
+                <div class="header__search">
+                    <!-- The form -->
+                    <form class="example" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class='bx bx-search'></i></button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SCRIPT -->
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <!-- APP SCRIPT -->
+        <script src="index.js"></script>
+    </div>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Style the search field */
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+    }
+
+    /* Style the submit button */
+    form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: var(--primary-color);
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        /* Prevent double borders */
+        cursor: pointer;
+    }
+
+    form.example button:hover {
+        background: rgb(80, 3, 3);
+    }
+
+    /* Clear floats */
+    form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>

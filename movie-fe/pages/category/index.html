@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikachuFilmClub</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="app">
+        <header id="header">
+        </header>
+        <div class="container">
+            <div class="grid content">
+                <div class="grid-row">
+                    <!-- <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category-head">
+                                <i class="head-icon fas fa-list"></i>
+                                Danh Mục
+                            </h3>
+                            <ul class="category-list ">
+                                <li class="category-item item-active">
+                                    <a href="#" class="category_item-link">Áo phông tay lỡ , dài</a>
+                                </li>
+                            </ul>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category_item-link">Áo phông có cổ </a>
+                                </li>
+                            </ul>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category_item-link">Áo phông không cổ</a>
+                                </li>
+                            </ul>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category_item-link">Áo phông tay lỡ</a>
+                                </li>
+                            </ul>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category_item-link">Áo phông tay dài</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> -->
+                    <div class="grid-column">
+                        <div class="home-filter">
+                            <!-- <div class="field"><label class="label">Thể loại:</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select>
+                                            <option value="">- Tất cả -</option>
+                                            <option value="am-nhac">Âm nhạc</option>
+                                            <option value="bi-an">Bí ẩn</option>
+                                            <option value="chien-tranh">Chiến tranh</option>
+                                            <option value="chien-tranh-chinh-tri">Chiến tranh &amp; Chính trị</option>
+                                            <option value="chinh-kich">Chính kịch</option>
+                                            <option value="gia-dinh">Gia đình</option>
+                                            <option value="giat-gan">Giật gân</option>
+                                            <option value="hai">Hài</option>
+                                            <option value="hanh-dong">Hành động</option>
+                                            <option value="hanh-dong-phieu-luu">Hành động &amp; Phiêu lưu</option>
+                                            <option value="hoat-hinh">Hoạt hình</option>
+                                            <option value="kinh-di">Kinh dị</option>
+                                            <option value="ky-ao">Kỳ ảo</option>
+                                            <option value="lang-man">Lãng mạn</option>
+                                            <option value="lich-su">Lịch sử</option>
+                                            <option value="noi-chuyen">Nói chuyện</option>
+                                            <option value="phieu-luu">Phiêu lưu</option>
+                                            <option value="phim-dai-ky">Phim dài kỳ</option>
+                                            <option value="tai-lieu">Tài liệu</option>
+                                            <option value="thuc-te">Thực tế</option>
+                                            <option value="tin-tuc">Tin tức</option>
+                                            <option value="toi-pham">Tội phạm</option>
+                                            <option value="tre-em">Trẻ em</option>
+                                            <option value="truyen-hinh">Truyền hình</option>
+                                            <option value="vien-tay">Viễn Tây</option>
+                                            <option value="vien-tuong">Viễn tưởng</option>
+                                            <option value="vien-tuong-than-thoai">Viễn tưởng &amp; Thần thoại</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field"><label class="label">Quốc gia:</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select>
+                                            <option value="">- Tất cả -</option>
+                                            <option value="US">Mỹ</option>
+                                            <option value="KR">Hàn Quốc</option>
+                                            <option value="GB">Anh</option>
+                                            <option value="FR">Pháp</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="HK">Hồng Kông</option>
+                                            <option value="JP">Nhật Bản</option>
+                                            <option value="CN">Trung Quốc</option>
+                                            <option value="TW">Đài Loan</option>
+                                            <option value="IN">Ấn Độ</option>
+                                            <option value="TH">Thái Lan</option>
+                                            <option value="AU">Úc</option>
+                                            <option value="VN">Việt Nam</option>
+                                            <option value="DE">Đức</option>
+                                            <option value="SE">Thụy Điển</option>
+                                            <option value="IT">Ý</option>
+                                            <option value="HU">Hungary</option>
+                                            <option value="IE">Ai-len</option>
+                                            <option value="MT">Malta</option>
+                                            <option value="NZ">New Zealand</option>
+                                            <option value="RU">Nga</option>
+                                            <option value="IS">Iceland</option>
+                                            <option value="FI">Phần Lan</option>
+                                            <option value="MW">Ma-la-uy</option>
+                                            <option value="CO">Colombia</option>
+                                            <option value="DK">Đan Mạch</option>
+                                            <option value="BE">Bỉ</option>
+                                            <option value="ES">Tây Ban Nha</option>
+                                            <option value="AR">Argentina</option>
+                                            <option value="NL">Hà Lan</option>
+                                            <option value="NO">Na Uy</option>
+                                            <option value="SG">Singapore</option>
+                                            <option value="PL">Ba Lan</option>
+                                            <option value="MY">Malaysia</option>
+                                            <option value="ID">Indonesia</option>
+                                            <option value="IR">Iran</option>
+                                            <option value="PR">Puerto Rico</option>
+                                            <option value="NP">Nepal</option>
+                                            <option value="BG">Bulgaria</option>
+                                            <option value="KH">Campuchia</option>
+                                            <option value="PH">Philippines</option>
+                                            <option value="TR">Thổ Nhĩ Kỳ</option>
+                                            <option value="MA">Morocco</option>
+                                            <option value="BR">Brazil</option>
+                                            <option value="MX">Mexico</option>
+                                            <option value="CZ">Séc</option>
+                                            <option value="RO">Rumani</option>
+                                            <option value="PS">Palestine</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field"><label class="label">Năm:</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select>
+                                            <option value="">- Tất cả -</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2012">2012</option>
+                                            <option value="-2012">Trước 2012</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field"><label class="label">Thời lượng:</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select>
+                                            <option value="">- Tất cả -</option>
+                                            <option value="0-60">Dưới 1 tiếng</option>
+                                            <option value="60-90">1 - 1.5 tiếng</option>
+                                            <option value="90-120">1.5 - 2 tiếng</option>
+                                            <option value="120-150">2 - 2.5 tiếng</option>
+                                            <option value="150-0">Trên 2.5 tiếng</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field"><label class="label">Sắp xếp:</label>
+                                <div class="control">
+                                    <div class="select">
+                                        <select>
+                                            <option value="updated">Ngày cập nhật</option>
+                                            <option value="publishDate">Ngày phát hành</option>
+                                            <option value="rating">Điểm đánh giá</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <div class="select-input">
+                                <span class="input-label">Thể loại:</span>
+                                <i style="color: black;" class='bx bxs-chevron-down'></i>
+                                <ul class="select-list">
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Hành động</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Phiêu lưu</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Viễn tưởng</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Kinh dị</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Gia đình</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Bí ẩn</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Chiến tranh</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="select-input">
+                                <span class="input-label">Quốc gia:</span>
+                                <i style="color: black;" class='bx bxs-chevron-down'></i>
+                                <ul class="select-list">
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Việt Nam</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Anh</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Pháp</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Mỹ</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Trung Quốc</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="select-input">
+                                <span class="input-label">Năm:</span>
+                                <i style="color: black;" class='bx bxs-chevron-down'></i>
+                                <ul class="select-list">
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">2021</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">2020</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">2019</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">2018</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- <div class="select-input">
+                                <span class="input-label">Giá</span>
+                                <i style="color: black;" class='bx bxs-chevron-down'></i>
+                                <ul class="select-list">
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Giá: Thấp đến Cao</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Giá: Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="select-input">
+                                <span class="input-label">Giá</span>
+                                <i style="color: black;" class='bx bxs-chevron-down'></i>
+                                <ul class="select-list">
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Giá: Thấp đến Cao</a>
+                                    </li>
+                                    <li class="select-item">
+                                        <a class="select-item-link" href="">Giá: Cao đến Thấp</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <div class="home-filter-paginate">
+                                <span class="paginate-num">
+                                    <span class="paginate-1">1</span>/14
+                                </span>
+                                <div class="home-next">
+                                    <a class="icon-link icon-next-color" href="#">
+                                        <i class='bx bxs-chevron-left'></i>
+                                    </a>
+                                    <a class="icon-link" href="#">
+                                        <i class='bx bxs-chevron-right'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div id="movies" class="grid-row">
+                            
+                            </div>
+                        </div>
+                        <!-- phân trang -->
+                        <ul class="pagination home-product-pagination ">
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">
+                                    <i class=" bx bxs-chevron-left"></i>
+                                </a>
+                            </li>
+                            <li class="pagination-item pagination-item-link-active">
+                                <a href="#" class=" pagination-item-link ">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">5</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">...</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">14</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-item-link">
+                                    <i class="bx bxs-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer id="footer" class="section">
+            
+        </footer>
+        <!-- COPYRIGHT SECTION -->
+        <div class="copyright">
+            Copyright 2021 <a href="#" target="_blank">
+                <i class='bx bx-copyright'></i>
+                Nguyen Dinh Ngoc Chen</a>
+        </div>
+        <!-- END COPYRIGHT SECTION -->
+    </div>
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../../utils/layout.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+<style>
+    .field {
+        margin: 5px;
+    }
+    /* .field label:hover{
+        color: var(--main-color);
+    }
+
+    .label:not(:last-child) {
+        margin-bottom: 0.5em;
+    }
+
+    .label {
+        color: #fff;
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .control {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        clear: both;
+        font-size: 2rem;
+        position: relative;
+        text-align: inherit;
+        
+    }
+
+    .select:not(.is-multiple) {
+        height: 2.5em;
+    }
+
+    .select {
+        display: inline-block;
+        max-width: 100%;
+        position: relative;
+        vertical-align: top;
+        
+    } */
+/*  selecton */
+.select-input {
+    position: relative;
+    min-width: 150px;
+    height: 34px;
+    padding:0 12px ;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.input-label {
+    font-size: 1.6rem;
+    color: var(--text-gray-color);
+}
+.select-list {
+    display: none;
+    position: absolute;
+    list-style: none;
+    left: 0;
+    right: 0;
+    top: calc(100% - 8px);
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding-left: 0 ;
+
+}
+.select-item {
+   margin: 10px 0;
+   
+}
+.select-item-link {
+    color: var(--text-gray-color);
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 0 12px;
+}
+.select-item-link:hover {
+    color: var(--primary-color);
+    background-color: rgb(241, 241, 241);
+}
+.select-input:hover .select-list {
+    display: block;
+}
+    .home-filter {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        padding: 22px 22px;
+        background-color: var(--text-gray-color);
+        border-radius: 2px;
+    }
+
+    
+    .home-filter-paginate {
+        margin-left: auto;
+        font-size: 1.4rem;
+    }
+
+    .home-filter-paginate {
+        display: flex;
+        align-items: center;
+    }
+
+    .paginate-num {
+        margin-right: 25px;
+    }
+
+    .paginate-1 {
+        color: var(--primary-color);
+    }
+
+    .home-next {
+        display: flex;
+        width: 72px;
+        height: 36px;
+        border-radius: 3px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 5%);
+        overflow: hidden;
+    }
+
+    .icon-link {
+        display: flex;
+        flex: 1;
+        background-color: white;
+        text-decoration: none;
+        justify-content: center;
+    }
+    .icon-link:hover{
+        color: var(--main-color);
+        background-color: var(--primary-color);
+    }
+
+    .icon-link:last-child {
+        align-items: center;
+        color: #555;
+        justify-content: center;
+    }
+    .icon-link:last-child:hover{
+        color: var(--main-color);
+        background-color: var(--primary-color);
+    }
+
+    .icon-next-color {
+        align-items: center;
+        color: rgb(165, 165, 165);
+        background-color: #f9f9f9;
+        border-right: 1px solid #eee;
+        cursor: default;
+    }
+
+    .grid-column {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .grid-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        /* margin-left: -5px;
+        margin-right: -5px; */
+    }
+
+    .home-product {
+        margin-bottom: 10px;
+    }
+
+    .grid-column-2 {
+        width: 20%;
+        padding: 5px;
+        /* padding-left: 5px;
+        padding-right: 5px; */
+    }
+
+    /* thứ tự trang */
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pagination-item {
+        margin: 40px 20px;
+        list-style: none;
+    }
+
+    .pagination-item-link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: var(--text-color);
+        min-width: 40px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 2px;
+        font-weight: 300;
+        background-color: var(--text-gray-color);
+    }
+    .pagination-item-link:hover{
+        color: var(--main-color);
+        background-color: var(--primary-color);
+    }
+
+    .pagination-item-link-active .pagination-item-link {
+        color: var(--white-color);
+        background-color: var(--primary-color);
+    }
+</style>
+
+</html>

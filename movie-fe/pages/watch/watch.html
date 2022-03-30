@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PikachuFilmClub</title>
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- Box icon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+</head>
+<style>
+    /* .title-watch { */
+    /* padding-top: 40%; */
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* } */
+
+    .watch video {
+        width: 100%;
+        height: 622px;
+    }
+
+    .watch-content {
+        margin: 50px;
+    }
+
+    .item-watch-title {
+        font-size: 5rem;
+        line-height: 5rem;
+        font-weight: 900;
+    }
+    .item-watch-title:hover{
+        color: var(--main-color);
+    }
+
+    .watch-infos {
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: calc(var(--space-top) / 2);
+    }
+
+    .watch-info {
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 5px;
+    }
+
+    .watch-info i {
+        color: var(--main-color);
+    }
+    .watch-info span {
+    margin-left: 5px;
+}
+    .watch-info~.watch-info {
+        margin-left: 5px;
+    }
+
+    .item-content-watch {
+        font-size: 1.4rem;
+        margin-top: var(--space-top);
+        line-height: 2rem;
+    }
+    .season{
+        /* position: absolute; */
+        margin: 50px 0;
+        cursor: pointer;
+    }
+    .season a{
+        margin: 4px;
+        border-radius: 5px;
+        display: inline;
+        font-size: 2rem;
+        padding: 10px;
+        background-color: var(--primary-color);
+        
+    }
+    .season a:hover{
+        color: var(--main-color);
+        background-color: var( --text-gray-color);
+    }
+</style>
+
+<body>
+    <div class="app">
+        <header id="header"></header>
+        <div class="watch">
+            <video id="video" width="100%" height="622px" controls>
+           
+            </video>
+            <div class="watch-content">
+                <!-- <h1 style="font-size: 40px;">Đại Úy Marvel</h1>
+                <h2 style="font-size: 20px;">Captain Marvel (2019)</h2> -->
+                <div class="item-watch-title">
+                   ######
+                </div>
+                <div class="watch-infos">
+                    <div class="movie-info imdb">
+                        <i class="bx bxs-star"></i>
+                        <span>#</span>
+                    </div>
+                    <div class="watch-info time">
+                        <i class="bx bxs-time"></i>
+                        <span># mins</span>
+                    </div>
+                    <div class="watch-info">
+                        <span>HD</span>
+                    </div>
+                    <div class="watch-info">
+                        <span>13+</span>
+                    </div>
+                </div>
+                <div class="item-content-watch">
+                    #
+                </div>
+                <div class="season">
+                    <a class="active" href="#">Tập 1</a>
+                    <a href="#">Tập 2</a>
+                    <a href="#">Tập 3</a>
+                    <a href="#">Tập 4</a>
+                    <a href="#">Tập 5</a>
+                    <a href="#">Tập 6</a>
+                    <a href="#">Tập 7</a>
+                    <a href="#">Tập 8</a>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="section">
+        <div class="footer-container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bxl-firefox bx-tada color-red'></i><span
+                                class="main-color">Pikachu</span>FilmClub
+                        </a>
+                        <p>
+                            Xem phim online miễn phí chất lượng cao với phụ đề tiếng việt - thuyết minh - lồng
+                            tiếng. PikachuFilmClub có nhiều thể loại phim phong phú, đặc sắc, nhiều bộ phim hay nhất
+                            - mới nhất.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>PikachuFilmClub</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Trợ giúp</a></li>
+                                    <li><a href="#">Hỏi đáp</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Câu hỏi thường gặp</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Các cách xem</a></li>
+                                    <li><a href="#">Kiểm tra tốc độ</a></li>
+                                    <li><a href="#">Tùy chọn cookie</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Thông tin</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">Điều khoản sử dụng</a></li>
+                                    <li><a href="#">Chính sách riêng tư</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Designed</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="/assets/img/Chen.jpg" alt="">
+                                        </a>
+                                        <div class="social-list">
+                                            <a href="#" class="social-item">
+                                                <i class="bx bxl-facebook" style="color: rgb(14, 6, 138);"></i>
+                                            </a>
+                                            <a href="#" class="social-item">
+                                                <i class="bx bxl-twitter" style="color: turquoise;"></i>
+                                            </a>
+                                            <a href="#" class="social-item">
+                                                <i class="bx bxl-instagram"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+        Copyright 2021 <a href="#" target="_blank">
+            <i class='bx bx-copyright'></i>
+            Nguyen Dinh Ngoc Chen</a>
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+    </div>
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../../utils/axiosUtils.js"></script>
+    <script src="../../services/movie.js"></script>
+    <script src="../../utils/layout.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
